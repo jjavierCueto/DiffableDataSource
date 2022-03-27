@@ -43,12 +43,11 @@ final class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel?.getGroceries()
         bind()
     }
     
     private func bind() {
-		viewModel?.groceries.bind(to: tableView.rx.items(cellIdentifier: ItemTableViewCell.reuseIdentifier, cellType: ItemTableViewCell.self)) { (_, model, itemCell) in
+		viewModel?.getGroceries().bind(to: tableView.rx.items(cellIdentifier: ItemTableViewCell.reuseIdentifier, cellType: ItemTableViewCell.self)) { (_, model, itemCell) in
 			itemCell.titleLabel.attributedText = model.titleAttributedString
 			itemCell.priceLabel.attributedText = model.priceAttributedString
 			itemCell.updateViewForRating(model.rating)

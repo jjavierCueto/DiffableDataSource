@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,11 +14,10 @@
 		35B98C5A27DD387300B25ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B98C5827DD387300B25ACE /* LaunchScreen.storyboard */; };
 		35B98C6427DD390700B25ACE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6327DD390700B25ACE /* MainViewController.swift */; };
 		35B98C6627DD3B4100B25ACE /* groceries.json in Resources */ = {isa = PBXBuildFile; fileRef = 35B98C6527DD3B4100B25ACE /* groceries.json */; };
-		35B98C6A27DD3B9F00B25ACE /* GroceriesReposiroty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */; };
+		35B98C6A27DD3B9F00B25ACE /* GroceriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6927DD3B9F00B25ACE /* GroceriesRepository.swift */; };
 		35B98C6E27DD3BFA00B25ACE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6D27DD3BFA00B25ACE /* Item.swift */; };
 		35B98C7427DD411E00B25ACE /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7327DD411E00B25ACE /* ItemViewModel.swift */; };
 		35B98C7627DD464E00B25ACE /* GroceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */; };
-		35B98C7927DD485700B25ACE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7827DD485700B25ACE /* Box.swift */; };
 		5B736FD08ABAB13D53D3273F /* Pods_DiffableDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B270681EB1E41B9248430F /* Pods_DiffableDataSource.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,11 +32,10 @@
 		35B98C5B27DD387300B25ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B98C6327DD390700B25ACE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		35B98C6527DD3B4100B25ACE /* groceries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groceries.json; sourceTree = "<group>"; };
-		35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesReposiroty.swift; sourceTree = "<group>"; };
+		35B98C6927DD3B9F00B25ACE /* GroceriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesRepository.swift; sourceTree = "<group>"; };
 		35B98C6D27DD3BFA00B25ACE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		35B98C7327DD411E00B25ACE /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewModel.swift; sourceTree = "<group>"; };
-		35B98C7827DD485700B25ACE /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		D2AC062A25EF542DDD2A84F6 /* Pods-DiffableDataSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableDataSource.release.xcconfig"; path = "Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource.release.xcconfig"; sourceTree = "<group>"; };
 		FBEAFA06CC2B359F2D2DE277 /* Pods-DiffableDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableDataSource.debug.xcconfig"; path = "Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +58,6 @@
 				FBEAFA06CC2B359F2D2DE277 /* Pods-DiffableDataSource.debug.xcconfig */,
 				D2AC062A25EF542DDD2A84F6 /* Pods-DiffableDataSource.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				35AA308927E1060A00BEE109 /* View */,
-				35B98C7727DD484C00B25ACE /* Utils */,
 				35B98C6827DD3B7800B25ACE /* Repository */,
 				35B98C6B27DD3BAF00B25ACE /* Item */,
 				35B98C6727DD3B5500B25ACE /* Main */,
@@ -135,7 +131,7 @@
 		35B98C6827DD3B7800B25ACE /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */,
+				35B98C6927DD3B9F00B25ACE /* GroceriesRepository.swift */,
 				35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */,
 			);
 			path = Repository;
@@ -156,14 +152,6 @@
 				35B98C7327DD411E00B25ACE /* ItemViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		35B98C7727DD484C00B25ACE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				35B98C7827DD485700B25ACE /* Box.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		48CFE6A4F42C1A6DFF97E7A2 /* Frameworks */ = {
@@ -294,8 +282,7 @@
 				35B98C4E27DD387100B25ACE /* AppDelegate.swift in Sources */,
 				35B98C5027DD387100B25ACE /* SceneDelegate.swift in Sources */,
 				35B98C7627DD464E00B25ACE /* GroceriesViewModel.swift in Sources */,
-				35B98C7927DD485700B25ACE /* Box.swift in Sources */,
-				35B98C6A27DD3B9F00B25ACE /* GroceriesReposiroty.swift in Sources */,
+				35B98C6A27DD3B9F00B25ACE /* GroceriesRepository.swift in Sources */,
 				35B98C7427DD411E00B25ACE /* ItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
