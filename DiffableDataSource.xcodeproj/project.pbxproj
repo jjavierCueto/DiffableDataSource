@@ -17,11 +17,13 @@
 		35B98C6A27DD3B9F00B25ACE /* GroceriesReposiroty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */; };
 		35B98C6E27DD3BFA00B25ACE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C6D27DD3BFA00B25ACE /* Item.swift */; };
 		35B98C7427DD411E00B25ACE /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7327DD411E00B25ACE /* ItemViewModel.swift */; };
-		35B98C7627DD464E00B25ACE /* GrovceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7527DD464E00B25ACE /* GrovceriesViewModel.swift */; };
+		35B98C7627DD464E00B25ACE /* GroceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */; };
 		35B98C7927DD485700B25ACE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B98C7827DD485700B25ACE /* Box.swift */; };
+		5B736FD08ABAB13D53D3273F /* Pods_DiffableDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B270681EB1E41B9248430F /* Pods_DiffableDataSource.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B270681EB1E41B9248430F /* Pods_DiffableDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiffableDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AA308A27E1062400BEE109 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		35B98C4A27DD387100B25ACE /* DiffableDataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffableDataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B98C4D27DD387100B25ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +36,10 @@
 		35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesReposiroty.swift; sourceTree = "<group>"; };
 		35B98C6D27DD3BFA00B25ACE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		35B98C7327DD411E00B25ACE /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
-		35B98C7527DD464E00B25ACE /* GrovceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrovceriesViewModel.swift; sourceTree = "<group>"; };
+		35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewModel.swift; sourceTree = "<group>"; };
 		35B98C7827DD485700B25ACE /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		D2AC062A25EF542DDD2A84F6 /* Pods-DiffableDataSource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableDataSource.release.xcconfig"; path = "Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource.release.xcconfig"; sourceTree = "<group>"; };
+		FBEAFA06CC2B359F2D2DE277 /* Pods-DiffableDataSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffableDataSource.debug.xcconfig"; path = "Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +47,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B736FD08ABAB13D53D3273F /* Pods_DiffableDataSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		167A5C6FF308B4ADB181015F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBEAFA06CC2B359F2D2DE277 /* Pods-DiffableDataSource.debug.xcconfig */,
+				D2AC062A25EF542DDD2A84F6 /* Pods-DiffableDataSource.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		35AA308927E1060A00BEE109 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +77,8 @@
 			children = (
 				35B98C4C27DD387100B25ACE /* DiffableDataSource */,
 				35B98C4B27DD387100B25ACE /* Products */,
+				167A5C6FF308B4ADB181015F /* Pods */,
+				48CFE6A4F42C1A6DFF97E7A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				35B98C6927DD3B9F00B25ACE /* GroceriesReposiroty.swift */,
-				35B98C7527DD464E00B25ACE /* GrovceriesViewModel.swift */,
+				35B98C7527DD464E00B25ACE /* GroceriesViewModel.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -149,6 +166,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		48CFE6A4F42C1A6DFF97E7A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B270681EB1E41B9248430F /* Pods_DiffableDataSource.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B98C5E27DD387300B25ACE /* Build configuration list for PBXNativeTarget "DiffableDataSource" */;
 			buildPhases = (
+				2BD98354028A5E77B270BFA0 /* [CP] Check Pods Manifest.lock */,
 				35B98C4627DD387100B25ACE /* Sources */,
 				35B98C4727DD387100B25ACE /* Frameworks */,
 				35B98C4827DD387100B25ACE /* Resources */,
+				188A0CB22A73BE54CEFA8108 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +241,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		188A0CB22A73BE54CEFA8108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiffableDataSource/Pods-DiffableDataSource-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BD98354028A5E77B270BFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiffableDataSource-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35B98C4627DD387100B25ACE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +293,7 @@
 				35B98C6427DD390700B25ACE /* MainViewController.swift in Sources */,
 				35B98C4E27DD387100B25ACE /* AppDelegate.swift in Sources */,
 				35B98C5027DD387100B25ACE /* SceneDelegate.swift in Sources */,
-				35B98C7627DD464E00B25ACE /* GrovceriesViewModel.swift in Sources */,
+				35B98C7627DD464E00B25ACE /* GroceriesViewModel.swift in Sources */,
 				35B98C7927DD485700B25ACE /* Box.swift in Sources */,
 				35B98C6A27DD3B9F00B25ACE /* GroceriesReposiroty.swift in Sources */,
 				35B98C7427DD411E00B25ACE /* ItemViewModel.swift in Sources */,
@@ -363,6 +432,7 @@
 		};
 		35B98C5F27DD387300B25ACE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBEAFA06CC2B359F2D2DE277 /* Pods-DiffableDataSource.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +452,7 @@
 		};
 		35B98C6027DD387300B25ACE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2AC062A25EF542DDD2A84F6 /* Pods-DiffableDataSource.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -6,21 +6,23 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
-class GrovceriesViewModel {
+class GroceriesViewModel {
     
     private let repository = GroceriesReposiroty()
     
     init() {}
     
-    private(set) var groceries: Box<[ItemViewMModel]> = Box(value: [])
+	private(set) var groceries: BehaviorRelay<[ItemViewMModel]> = BehaviorRelay.init(value: [])
     
     func getGroceries() {
         let result = repository.getGroceriesList()
         
         switch result {
         case .success(let items):
-            groceries.value = items.map { ItemViewMModel(item: $0) }
+			groceries.accept( items.map { ItemViewMModel(item: $0) })
         case .failure(let error):
             print(error)
         }
